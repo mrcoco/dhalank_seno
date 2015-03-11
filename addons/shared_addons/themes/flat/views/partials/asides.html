@@ -1,0 +1,36 @@
+<aside class="col-sm-4 col-sm-push-8">
+    <div class="widget search">
+        {{ search:form class="input-group" }} 
+            <input name="q" class="form-control" autocomplete="off" placeholder="Search terms..." />
+            <span class="input-group-btn">
+                <button class="btn btn-danger" type="submit" name="submit"><i class="icon-search"></i></button>
+            </span>
+        {{ /search:form }}
+    </div><!--/.search-->
+
+    <div class="widget ads">
+        <div class="row">
+            <div class="col-xs-6">
+                <a href="#">{{ theme:image file="ads/ad1.png" class="img-responsive img-rounded" alt="Fun!" }}</a>
+            </div>
+
+            <div class="col-xs-6">
+                <a href="#">{{ theme:image file="ads/ad1.png" class="img-responsive img-rounded" alt="Fun!" }}</a>
+            </div>
+        </div>
+        <p> </p>
+        <div class="row">
+            <div class="col-xs-6">
+                <a href="#">{{ theme:image file="ads/ad2.png" class="img-responsive img-rounded" alt="Fun!" }}</a>
+            </div>
+
+            <div class="col-xs-6">
+                <a href="#">{{ theme:image file="ads/ad3.png" class="img-responsive img-rounded" alt="Fun!" }}</a>
+            </div>
+        </div>
+    </div><!--/.ads-->     
+
+    <div class="widget categories">
+        {{ widgets:area slug="sidebar" }}                     
+    </div><!--/.categories-->
+</aside>
