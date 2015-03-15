@@ -11,15 +11,9 @@
                     <h4>Wargo Laras</h4>
                     <div>
                         <ul class="arrow">
-                            <li><a href="#">mas ..</a></li>
-                            <li><a href="#">mbak ..</a></li>
-                            <li><a href="#">den ..</a></li>
-                            <li><a href="#">mas ..</a></li>
-                            <li><a href="#">mas</a></li>
-                            <li><a href="#">mas</a></li>
-                            <li><a href="#">mas</a></li>
-                            <li><a href="#">mas</a></li>
-                            <li><a href="#">mas</a></li>
+                        {{ blog:posts order-by="title" order-dir="desc" category="wargo-laras" }}
+                            <li><a href="{{ url }}">{{ title }}</a></li>
+                        {{ /blog:posts }}
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
